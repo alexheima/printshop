@@ -3,6 +3,7 @@ import { AuthData } from "../../auth/AuthWrapper";
 import { nav } from "./navigation";
 
 
+
 export const RenderRoutes = () => {
 
         const { user } = AuthData();
@@ -53,3 +54,4 @@ export const RenderRoutes = () => {
              </div>
         )
    }
+

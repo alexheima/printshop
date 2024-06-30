@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Template</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .faq-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .faq-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .faq-list {
+      width: 50%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    .faq-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .faq-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+    .faq-list li:last-child {
+      border-bottom: none;
+    }
+    .faq-list li .faq-question {
+      font-weight: bold;
+    }
+    .faq-list li .faq-answer {
+      display: none;
+      padding: 10px 0;
+    }
+    .faq-list li.active .faq-answer {
+      display: block;
+    }
+    .faq-contact {
+      width: 50%;
+      padding: 20px;
+    }
+    .faq-contact h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .faq-contact p {
+      margin-bottom: 1rem;
+    }
+    .faq-contact button {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="faq-title">All you need to know.</h1>
+    <div class="faq-content">
+      <div class="faq-list">
+        <ul>
+          <li>
+            <div class="faq-question">All sizes & prices</div>
+            <i class="bx bx-chevron-down"></i>
+            <div class="faq-answer">Maralex offers the different sizes in different aspect ratios. Check out all sizes & prices.</div>
+          </li>
+          <li>
+            <div class="faq-question">Request a quote (from 10 prints)</div>
+            <div class="faq-answer">Are you organizing a photo exposition or do you need a larger order? Contact us know what you are looking for. Please add details for sizes and amounts, so we can give you a correct quote.</div>
+          </li>
+          <li>
+            <div class="faq-question">Delivery & returns</div>
+            <div class="faq-answer">Your Maralex order will be ready to ship within 3 working days.
+
+              We work with a 100% customer satisfaction guarantee, meaning we will solve any issues that may occur, together with our customer. Therefore, we don't have a standardized returns policy.</div>
+          </li>
+          <li>
+            <div class="faq-question">Shipping</div>
+            <div class="faq-answer">Shipping is free for orders with a total value of CHF 75 or more.
+
+              Else, the shipping costs are €5,99 in The Netherlands and €9,99 for the rest of Europe. Shipping within the US and Canada: $9.99.</div>
+          </li>
+          <li>
+            <div class="faq-question">How is quality assured?</div>
+            <div class="faq-answer">We'll help you decide on the right size for your Maralex print during the ordering process. When you've uploaded your photo, our system lets you know if your photo doesn't have the required resolution for the chosen Maralex size. That's how we ensure the best possible results.</div>
+          </li>
+          <li>
+            <div class="faq-question">File/Image requirements</div>
+            <div class="faq-answer">Minimum resolution: 80ppi
+              Color space: sRGB</div>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-contact">
+        <h2>Do you have other questions?</h2>
+        <p>Don't hesitate to contact us.</p>
+        <button>Contact us</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqList = document.querySelector('.faq-list ul');
+
+    faqList.addEventListener('click', (event) => {
+      const clickedItem = event.target.closest('li');
+      if (clickedItem) {
+        clickedItem.classList.toggle('active');
+      }
+    });
+  </script>
+</body>
+</html>
