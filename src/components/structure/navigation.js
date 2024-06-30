@@ -7,7 +7,7 @@ import Gallery from "../pages/Gallery"
 
 export const nav = [
      { path:     "/",         name: "Home",        element: <Home />,       isMenu: true,     isPrivate: false  },
-     { path:     "/",         name: "Gallery",        element: <Gallery />,       isMenu: true,     isPrivate: false  },
+     { path:     "/Gallery",         name: "Gallery",        element: <Gallery />,       isMenu: true,     isPrivate: false  },
      { path:     "/about",    name: "About",       element: <About />,      isMenu: true,     isPrivate: false  },
      { path:     "/login",    name: "Login",       element: <Login />,      isMenu: false,    isPrivate: false  },
      { path:     "/private",  name: "Private",     element: <Private />,    isMenu: true,     isPrivate: true  },
