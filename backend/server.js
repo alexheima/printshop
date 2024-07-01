@@ -1,9 +1,11 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'public')));
 
 const db = mysql.createConnection({
   host: 'localhost',  
@@ -11,6 +13,8 @@ const db = mysql.createConnection({
   password: 'Orient2106',
   database: 'products',
 });
+
+db.connect()
 
 app.get('/', (req, res) => {
   return res.json('From Backend side'); 
@@ -26,6 +30,6 @@ app.get('/products', (req, res) => {
   });
 })
 
-app.listen(3001, () => {
-  console.log('Server is running on port 3001');
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
 });

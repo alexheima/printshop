@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style.css'; // it was index.css by default
+import './style.css'; //изначально тут было index.css
 import App from './App';
-// import Faq from '../public/Faqdropdown';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
     <App />
-
 );
