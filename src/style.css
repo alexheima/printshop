@@ -115,6 +115,76 @@ p.price {
     transition: background-color 0.3s;
 }
 
+.gallery {
+  position: relative;
+}
+
+.cart {
+  color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 70%;
+  width: 100%;
+  margin-top: 5.8rem;
+  height: 100vh;
+  background-color: #090909;
+  overflow-y: auto;
+}
+
+.quantity {
+ margin-left: 60px;
+ margin-bottom: 10px;
+}
+
+.image-cart {
+  margin-left: 60px;
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: #e4e4e4 2px solid;
+  border-radius: 8px;
+}
+
+.cart-h1 {
+  margin-left: 60px;
+  font-weight: 400;
+}
+
+.cartbtn {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 176px;
+  margin-left: 58px;
+  color: #191919;
+  font-weight: 600;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.cartbtn-remove {
+  all: unset;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+  color: #dcdcdc;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.cartbtn:hover {
+  color: #e4e4e4;  
+}
+
+.cartbtn-remove:hover {
+  all: unset;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+  cursor: pointer;
+  color: #41449a;
+  font-weight: 600;
+}
 
   @media only screen and (max-width: 1100px) {
     .whole {

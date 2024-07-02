@@ -3,20 +3,24 @@ import React from 'react';
 const Cart = ({ cart, removeFromCart }) => {
   return (
     <div>
-      <h1>Cart</h1>
+      <h1 className='cart-h1'>Your cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
         <ul>
-          {cart.map(item => (
-            <li key={item.id}>
-              {item.name} - Quantity: {item.quantity}
-              <button onClick={() => removeFromCart(item.id)}>Remove</button>
+         {cart.map(item => (
+          <li key={item.id}>
+            <img className='image-cart' src={item.image_path} alt={item.name} style={{marginRight: '10px' }} />
+            <div>
+              <span>{item.name}</span>
+              <span className='quantity'>Quantity: {item.quantity}</span>
+            </div>
+              <button className='cartbtn-remove' onClick={() => removeFromCart(item.id)}>Remove</button>
+              {cart.length > 0 && <button className='cartbtn' >CHECKOUT</button>}
             </li>
           ))}
         </ul>
       )}
-      {cart.length > 0 && <button>CHECKOUT</button>}
     </div>
   );
 };
