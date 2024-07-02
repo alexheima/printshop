@@ -186,6 +186,54 @@ p.price {
   font-weight: 600;
 }
 
+/* Feedbacks */
+
+.feedback {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.feedback-name {
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.feedback-item{
+  gap: 20px;
+  padding: 20px 20px 40px 16px;
+  width: 400px; 
+  margin-bottom: 32px;
+  margin-right: 32px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border: 1px solid #2e2e2e7a;
+  justify-content: space-between;
+}
+
+.comment {
+  font-style: italic;
+}
+
+.feedback-img {
+  width: 130px;
+  height: fit-content;
+  margin-right: 10px;
+  box-shadow: #0000005e 0px 0px 4px;
+  border-radius: 2px;
+}
+
   @media only screen and (max-width: 1100px) {
     .whole {
       flex-direction:column-reverse;
