@@ -213,10 +213,12 @@ p.price {
   gap: 20px;
   padding: 20px 20px 40px 16px;
   width: 400px; 
-  border: #000000 1px solid;
   margin-bottom: 32px;
   margin-right: 32px;
   display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border: 1px solid #2e2e2e7a;
   justify-content: space-between;
 }
 
@@ -229,6 +231,7 @@ p.price {
   height: fit-content;
   margin-right: 10px;
   box-shadow: #0000005e 0px 0px 4px;
+  border-radius: 2px;
 }
 
   @media only screen and (max-width: 1100px) {
